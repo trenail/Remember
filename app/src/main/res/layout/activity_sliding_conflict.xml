@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.test.remember.ExternalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.remember.SlidingConflictActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+
+        <com.test.remember.ExternalScrollViewChild
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/scrollview_child"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddd\r\ncccccdddasddddddddddddddb\r\ncccccdddasdddddddddddddda\r\ncccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddd\r\ncccccdddasdddddddddddddfd\r\ncccccdddasddddddddddddddc\r\ncccccdddasddddddddddddd2\r\ncccccdddasdddddddddddddd\r\n" />
+        </com.test.remember.ExternalScrollViewChild>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\asdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdfasdfasdfasdfasd\r\nasdfasdfasdf" />
+    </LinearLayout>
+</com.test.remember.ExternalScrollView>

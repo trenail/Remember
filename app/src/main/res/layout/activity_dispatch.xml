@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.remember.DispatchActivity">
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_scroll_conflict"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Scroll Conflict(外部拦截)" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_scroll_conflict2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Scroll Conflict(内部处理)" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_scroll_conflict3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Scroll Conflict(NestedScrollView)" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_template_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="ScrollingActivity(模板Activity)" />-->
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

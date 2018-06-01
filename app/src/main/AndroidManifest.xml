@@ -3,19 +3,38 @@
     package="com.test.remember">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".DispatchActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SlidingConflictActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SlidingConflictActivity2" />
+        <activity android:name=".SlidingConflictActivity3" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ConstraintLayoutDemoActivity" />
+        <activity
+            android:name=".CustomScrollingActivity"
+            android:label="@string/title_activity_custom_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SlidingConflictActivity4" />
+        <activity android:name=".forceexit.Main2Activity" />
+        <activity android:name=".forceexit.Main3Activity"></activity>
     </application>
 
 </manifest>
