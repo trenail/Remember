@@ -34,7 +34,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SlidingConflictActivity4" />
         <activity android:name=".forceexit.Main2Activity" />
-        <activity android:name=".forceexit.Main3Activity"></activity>
+        <activity android:name=".forceexit.Main3Activity" />
+        <activity android:name=".RotatingActivity" />
+        <activity android:name=".TabLayoutActivity" />
+        <activity android:name=".SearchViewActivity"></activity>
     </application>
 
 </manifest>

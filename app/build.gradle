@@ -36,5 +36,8 @@ dependencies {
         exclude module: 'support-annotations'
     }
 
+    //https://github.com/H07000223/FlycoTabLayout/blob/master/README_CN.md
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
 
+    compile project(":searchview")
 }

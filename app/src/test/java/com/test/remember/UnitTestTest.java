@@ -100,4 +100,13 @@ public class UnitTestTest {
     public void testTimeout() throws Exception {
         unitTest.testTimeout();
     }
+
+    @Test
+    public void test1() {
+        String str = null;
+        System.out.println("----");
+        str += "test";
+        System.out.println(str);
+        System.out.println("----");
+    }
 }

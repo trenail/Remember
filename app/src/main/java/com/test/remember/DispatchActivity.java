@@ -76,7 +76,9 @@ public class DispatchActivity extends AppCompatActivity {
                 new StartPageBean("ScrollingActivity(模板Activity)", ScrollingActivity.class),
                 new StartPageBean("自定义toolbar", CustomScrollingActivity.class),
                 new StartPageBean("滑动冲突测试", SlidingConflictActivity4.class),
-                new StartPageBean("模拟应用被kill", Main2Activity.class)
+                new StartPageBean("模拟应用被kill", Main2Activity.class),
+                new StartPageBean("旋屏", RotatingActivity.class),
+                new StartPageBean("自定义搜索框", SearchViewActivity.class)
         );
 
         mListView.setAdapter(new StartPageAdapter(DispatchActivity.this, startPageBeanList));
