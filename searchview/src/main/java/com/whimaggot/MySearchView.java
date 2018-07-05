@@ -37,7 +37,7 @@ public class MySearchView extends RelativeLayout {
     }
 
     public MySearchView(Context context, AttributeSet attrs) {
-        super(context, null);
+        super(context, attrs);
         initView(context);
     }
 

@@ -7,13 +7,7 @@
     android:orientation="vertical"
     tools:context="com.test.remember.SearchViewActivity">
 
-    <com.whimaggot.SearchView
-        android:id="@+id/sv_search"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:imeOptions="actionSearch"
-        app:hint_text="搜索" />
+
 
     <EditText
         android:layout_width="match_parent"

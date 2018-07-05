@@ -1,16 +1,11 @@
 package com.test.remember;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.widget.ScrollView;
 
 import com.whimaggot.MySearchView;
-import com.whimaggot.SearchView;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class SearchViewActivity extends AppCompatActivity {
 
