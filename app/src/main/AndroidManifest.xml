@@ -37,7 +37,8 @@
         <activity android:name=".forceexit.Main3Activity" />
         <activity android:name=".RotatingActivity" />
         <activity android:name=".TabLayoutActivity" />
-        <activity android:name=".SearchViewActivity"></activity>
+        <activity android:name=".SearchViewActivity" />
+        <activity android:name=".CoordinatorLayoutDemoActivity" android:theme="@style/AppTheme.NoActionBar" ></activity>
     </application>
 
 </manifest>
