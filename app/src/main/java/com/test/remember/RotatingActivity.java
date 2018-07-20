@@ -9,7 +9,7 @@ import butterknife.ButterKnife;
 
 /**
  * 打开acitivty 5秒内旋转屏幕,报错
- *
+ * activity 重新创建,之前线程持有的对象已不存在
  */
 public class RotatingActivity extends AppCompatActivity {
 
@@ -17,6 +17,8 @@ public class RotatingActivity extends AppCompatActivity {
 
     @BindView(R.id.tv_hello)
     TextView textView;
+
+    int value = 0;
 
 
     @Override
@@ -27,6 +29,9 @@ public class RotatingActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         if (COUNT == 0) {
+
+            value = 1;
+
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -36,8 +41,17 @@ public class RotatingActivity extends AppCompatActivity {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    textView.setText("test text!");
-                    System.out.println("new Thread():" + textView.hashCode());
+
+                    System.out.println("value :" + value);
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            textView.setText("test text!");
+                            System.out.println("new Thread():" + textView.hashCode());
+                        }
+                    });
+
                 }
             }).start();
         } else {

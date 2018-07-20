@@ -1,6 +1,5 @@
 package com.test.java.concurrent;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
@@ -9,6 +8,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 单例并发测试
+ * 1.不添加volatile关键字
+ * 2.开启一百个线程,不断的获取实例
+ * 3.主线程不断的清空,创建实例
+ * <p>
+ * 如果出现了对象不为空,但是未实例化的情况(testValue==0),立即退出程序,打印日志
+ * <p>
+ * 为啥不能重现?还是理解不正确?
  */
 public class SingletonDemo {
 
@@ -23,12 +29,11 @@ public class SingletonDemo {
                 @Override
                 public void run() {
                     while (true) {
-                        if (instance != null ) {
-                            if(instance.getTestValue() ==0) {
-                                System.out.println("getTestValue error!");
-                                System.exit(0);
-                            }
+                        if (SingletonDemo.getInstance().getTestValue() == 0) {
+                            System.out.println("getTestValue error!");
+                            System.exit(0);
                         }
+
                     }
                 }
             });
@@ -63,7 +68,7 @@ public class SingletonDemo {
             SingletonDemo.getInstance();
 
             try {
-                Thread.sleep(100);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -89,6 +94,11 @@ public class SingletonDemo {
         if (atomicInteger.get() > 1) {
             System.out.println("SingletonDemo class instance count > 1");
             System.exit(0);
+        }
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
         testValue = 1;

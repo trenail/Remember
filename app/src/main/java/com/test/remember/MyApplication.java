@@ -17,6 +17,15 @@ public class MyApplication extends Application {
         Log.d("RememberLog", "MyApplication->onCreate()");
 
         GlobleValue = "GlobleValue init on app onCreate()";
+
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                Log.e("RememberLog", "MyApplication->onTerminate()");
+                System.exit(0);
+            }
+        });
+
     }
 
 
